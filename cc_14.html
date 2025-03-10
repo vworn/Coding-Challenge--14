@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket System</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Styling for header and footer */
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Input fields and button styling */
+        #controls {
+            margin: 20px 0;
+        }
+
+        /* Ticket container to hold support tickets */
+        #ticketContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Support ticket styling */
+        .ticket {
+            background: lightgray;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Button styling */
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Resolve button */
+        .resolve-btn {
+            background: red;
+            color: white;
+            border: none;
+        }
+
+        /* Edit button */
+        .edit-btn {
+            background: orange;
+            color: white;
+            border: none;
+        }
+
+        /* Save button */
+        .save-btn {
+            background: green;
+            color: white;
+            border: none;
+        }
+
+        /* Highlight High Priority Tickets */
+        .high-priority {
+            border: 2px solid red;
+            background-color: #ffcccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Customer Support Ticket System</h1>
+    </header>
+
+    <main>
+        <section id="controls">
+            <input type="text" id="customerName" placeholder="Customer Name">
+            <input type="text" id="issueDescription" placeholder="Issue Description">
+            <select id="priorityLevel">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="addTicket">Add Ticket</button>
+        </section>
+
+        <div id="ticketContainer"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Customer Support System</p>
+    </footer>
+
+    <script src="cc_14.js"></script>
+</body>
+</html>
