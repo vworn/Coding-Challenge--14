@@ -122,3 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Support ticket clicked!");
         }
     });
+
+    // Task 3: Highlighting High Priority Tickets
+    function highlightHighPriorityTickets() {
+        const highPriorityTickets = Array.from(document.querySelectorAll(".high-priority"));
+        highPriorityTickets.forEach(ticket => {
+            ticket.style.backgroundColor = "#ff9999";
+        });
+    }
+});
