@@ -72,6 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Clear input fields after adding a ticket
         customerInput.value = "";
         issueInput.value = "";
+
+        // Highlight high priority tickets
+        highlightHighPriorityTickets();
     }
 
     // Task 5: Enable Inline Editing for Support Tickets
