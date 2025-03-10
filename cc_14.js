@@ -44,3 +44,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const resolveBtn = document.createElement("button");
         resolveBtn.textContent = "Resolve";
         resolveBtn.classList.add("resolve-btn");
+
+        // Task 4: Implementing Ticket Resolution with Event Bubbling
+        resolveBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevents event bubbling
+            ticketContainer.removeChild(ticket);
+        });
+
+        // Create edit button
+        const editBtn = document.createElement("button");
+        editBtn.textContent = "Edit";
+        editBtn.classList.add("edit-btn");
