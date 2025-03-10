@@ -1,0 +1,3 @@
+Coding Challenge: Customer Support Ticket System
+Challenge Overview
+In this challenge, you'll create an interactive Customer Support Ticket System for managing support requests in a company. You will leverage your skills in DOM manipulation to dynamically add, update, and remove support tickets. This challenge reinforces selecting nodes, using createElement, appendChild, removeChild, and handling event propagation with stopPropagation(). The business case simulates real-world scenarios where a company needs to efficiently track and manage customer support inquiries.
